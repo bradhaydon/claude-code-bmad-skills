@@ -1,11 +1,11 @@
 {
-  "name": "bmad-method-harness",
+  "name": "bmad-method-harness-fork",
   "owner": {
-    "name": "AJ Geddes",
-    "url": "https://github.com/aj-geddes"
+    "name": "Brad Haydon",
+    "url": "https://github.com/bradhaydon"
   },
-  "description": "A community marketplace hosting the BMAD Planning & Orchestrator — a Claude Code harness for the BMAD Method by the BMAD Code Organization, focused on planning, roadmapping, and conflict-free parallel orchestration.",
-  "version": "0.5.0",
+  "description": "Brad Haydon's fork of the BMAD Planning & Orchestrator marketplace — a Claude Code harness for the BMAD Method by the BMAD Code Organization, focused on planning, roadmapping, and conflict-free parallel orchestration. Adds a daily-pulse tracking refresh (todo/open-questions per project) on top of upstream.",
+  "version": "0.6.0",
   "plugins": [
     {
       "name": "bmad-planning-orchestrator",
