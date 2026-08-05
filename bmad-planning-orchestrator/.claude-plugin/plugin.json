@@ -1,7 +1,7 @@
 {
   "name": "bmad-planning-orchestrator",
   "displayName": "BMAD Planning & Orchestrator",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A Claude Code planning & orchestration harness for the BMAD Method by the BMAD Code Organization (https://github.com/bmad-code-org/BMAD-METHOD). Facilitates the BMAD planning lifecycle — brainstorm, research, product brief, SPEC, PRD, UX, architecture, epics & stories — then orchestrates conflict-free, dependency-ordered PARALLEL workstreams and hands ready-for-dev stories off to your dev tools. It plans and orchestrates; it never writes the code.",
   "author": {
     "name": "AJ Geddes",

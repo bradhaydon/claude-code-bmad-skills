@@ -1,5 +1,5 @@
 {
-  "description": "BMAD Planning & Orchestrator hooks — lightweight context injection at session start and next-step nudge on stop.",
+  "description": "BMAD Planning & Orchestrator hooks — lightweight context injection at session start, tracking refresh and next-step nudge on stop.",
   "hooks": {
     "SessionStart": [
       {
@@ -15,6 +15,11 @@
     "Stop": [
       {
         "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/refresh-tracking.sh\"",
+            "timeout": 5
+          },
           {
             "type": "command",
             "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scripts/suggest-next.sh\"",

@@ -4,6 +4,21 @@ All notable changes to the **BMAD Planning & Orchestrator** plugin are recorded
 here. The plugin tracks the **BMAD Method v6.x** by the BMAD Code Organization;
 each release notes the upstream line it follows.
 
+## [0.6.0] — 2026-08-05
+
+### Added
+- **`bmad-todo` skill** and `hooks/scripts/refresh-tracking.sh`: idempotent,
+  plain-language tracking refresh per project. Regenerates `todo.md` (next
+  steps derived from story statuses, backlog, and manual notes) and
+  `open-questions.md` (from `addendum.md`'s Open Questions table) on every
+  run; scaffolds `manual-notes.md` (user-owned, never overwritten) and
+  `daily-log.md` (header only — appended to by a separate daily-report
+  workflow) on first run. Recognizes both the nested (`bmad-output/`) and
+  root-level output-folder conventions.
+- Wired `refresh-tracking.sh` into the `Stop` hook (alongside the existing
+  `suggest-next.sh`), so tracking files stay fresh after every BMAD skill run
+  without manual invocation.
+
 ## [0.5.0] — 2026-06-19
 
 Initial public preview of the Claude Code **plugin** (pre-1.0). Tracks upstream
